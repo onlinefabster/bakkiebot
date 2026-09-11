@@ -1,0 +1,41 @@
+/* BakkieBot base styles — deep navy ink, off-white bg (see src/assets/color-style-guide.md) */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Patrick+Hand&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  --ink: #08285f;
+  --ink-dark: #071b46;
+  --blue: #8fc7f5;
+  --blue-light: #e8f3fc;
+  --green: #8ccb9a;
+  --green-light: #eaf6ed;
+  --yellow: #ffc94d;
+  --yellow-light: #fff6d9;
+  --coral: #f28c8c;
+  --coral-light: #fdeaea;
+  --purple: #a99be8;
+  --purple-light: #f1eefc;
+  --coffee: #a96b32;
+  --background: #fcfcfa;
+  --robot-grey: #d9e1ea;
+
+  font-family: 'Inter', 'Nunito Sans', system-ui, sans-serif;
+  color: var(--ink);
+  background: var(--background);
+  color-scheme: light;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--background);
+}
+
+html {
+  scroll-padding-top: 80px; /* offset for anchor jumps */
+}
