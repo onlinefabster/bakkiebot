@@ -64,7 +64,16 @@ export default function Hero() {
               variant="contained"
               size="large"
               href="#sponsorship"
-              sx={{ px: 4, fontSize: '1.05rem' }}
+              sx={{
+                px: 4,
+                fontSize: '1.05rem',
+                backgroundColor: '#FFC94D',
+                color: '#08285F',
+                '&:hover': {
+                  backgroundColor: '#08285F',
+                  color: '#FFFFFF',
+                },
+              }}
             >
               ☕ Become a Sponsor
             </Button>
