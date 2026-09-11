@@ -1,25 +1,24 @@
-import { Container, Typography, Button } from '@mui/material'
+import Hero from './components/Hero'
+import Problem from './components/Problem'
+import Objectives from './components/Objectives'
+import Setup from './components/Setup'
+import Sponsorship from './components/Sponsorship'
+import Footer from './components/Footer'
 
 /**
  * BakkieBot — single-page investor site.
- * Sections: Hero, Problem, Objectives, Setup, Sponsorship, Footer.
- * Component placeholders composed here in order.
+ * Ordered sections: Hero → Problem → Objectives → Setup → Sponsorship → Footer.
  */
 function App() {
   return (
-    <Container maxWidth="lg" sx={{ py: 6 }}>
-      <Typography variant="h1" align="center" gutterBottom>
-        BakkieBot
-      </Typography>
-      <Typography variant="h5" align="center" sx={{ opacity: 0.8 }}>
-        A robot arm that makes your coffee.
-      </Typography>
-      <div style={{ textAlign: 'center', marginTop: 24 }}>
-        <Button variant="contained" href="#sponsorship" size="large">
-          ☕ Become a Sponsor
-        </Button>
-      </div>
-    </Container>
+    <div id="top">
+      <Hero />
+      <Problem />
+      <Objectives />
+      <Setup />
+      <Sponsorship />
+      <Footer />
+    </div>
   )
 }
 
