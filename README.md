@@ -1,32 +1,47 @@
-# React + TypeScript + Vite
+# BakkieBot
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A single-page website for **BakkieBot** — a robot arm (Hugging Face) that operates a
+Philips Senseo coffee machine. This site presents the project's objectives, setup
+and sponsorship ask to prospective investors.
 
-Currently, two official plugins are available:
+Built with **React + TypeScript + Vite**, styled with **MUI** (Material UI v9) using
+the hand-drawn pastel visual identity defined in `src/assets/color-style-guide.md`.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Run locally (dev)
 
-## React Compiler
-
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the Oxlint configuration
-
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
-
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
+```bash
+npm install
+npm run dev
+# → http://localhost:5173
 ```
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
+## Production build
+
+```bash
+npm run build          # outputs static site to dist/
+npm run preview        # serve the built site locally
+```
+
+## Run as a container
+
+The GitHub Action (`.github/workflows/build-containers.yml`) builds the image and
+pushes it to **GHCR**: `ghcr.io/onlinefabster/bakkiebot`.
+
+```bash
+docker pull ghcr.io/onlinefabster/bakkiebot:latest
+docker run -d --name bakkiebot -p 8080:80 ghcr.io/onlinefabster/bakkiebot:latest
+# → http://localhost:8080
+```
+
+## Deploy on a docker host
+
+```bash
+sudo mkdir -p /docker/bakkiebot
+# from /docker location — everything self-contained in the image
+docker run -d --name bakkiebot --restart unless-stopped \
+  -p 8080:80 ghcr.io/onlinefabster/bakkiebot:latest
+```
+
+## Contact
+
+Fabian Tuender · fabian@bakkiebot.nl · www.bakkiebot.nl
