@@ -39,7 +39,7 @@ export default function Setup() {
             key={s.n}
             sx={{
               bgcolor: s.bg,
-              borderRadius: 6,
+              borderRadius: 2,
               p: 3,
               border: '1px solid #E8F3FC',
             }}
@@ -85,7 +85,7 @@ export default function Setup() {
           maxWidth: 780,
           mx: 'auto',
           bgcolor: '#FFFFFF',
-          borderRadius: 6,
+          borderRadius: 2,
           border: '1px solid #E8F3FC',
           p: { xs: 2, md: 4 },
         }}

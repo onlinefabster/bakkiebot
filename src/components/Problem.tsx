@@ -54,7 +54,7 @@ export default function Problem() {
             key={c.title}
             sx={{
               bgcolor: '#FFFFFF',
-              borderRadius: 5,
+              borderRadius: 2,
               p: 3,
               border: '1px solid #E8F3FC',
             }}
