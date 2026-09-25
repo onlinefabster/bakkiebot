@@ -39,7 +39,7 @@ export default function Setup() {
             key={s.n}
             sx={{
               bgcolor: s.bg,
-              borderRadius: 2,
+              borderRadius: '68px',
               p: 3,
               border: '1px solid #E8F3FC',
             }}
