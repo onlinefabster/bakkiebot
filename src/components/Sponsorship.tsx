@@ -2,6 +2,8 @@ import { Box, Button, Typography } from '@mui/material'
 import Section from './Section'
 
 const EMAIL = 'fabian@bakkiebot.nl'
+const GITHUB_SPONSORS_URL = 'https://github.com/sponsors/onlinefabster'
+const KOFI_URL = 'https://ko-fi.com/fab2ster'
 
 export default function Sponsorship() {
   return (
@@ -48,24 +50,42 @@ export default function Sponsorship() {
               gap: 2,
             }}
           >
-            <Button
-              variant="contained"
-              size="large"
-              href={`mailto:${EMAIL}?subject=${encodeURIComponent('Sponsorship — BakkieBot')}`}
-              sx={{ px: 5, fontSize: '1.1rem' }}
+            <Box
+              sx={{
+                display: 'flex',
+                flexWrap: 'wrap',
+                justifyContent: 'center',
+                gap: 2,
+              }}
             >
-              ☕ Make it happen
-            </Button>
-            <Typography variant="body2" color="text.secondary">
-              Reach Fabian Tuender directly at{' '}
-              <Box
-                component="a"
-                href={`mailto:${EMAIL}`}
-                sx={{ color: 'ink', fontWeight: 600, textDecoration: 'underline' }}
+              <Button
+                variant="contained"
+                size="large"
+                href={GITHUB_SPONSORS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{ px: 4, fontSize: '1.1rem' }}
               >
-                {EMAIL}
-              </Box>
-            </Typography>
+                Sponsor on GitHub
+              </Button>
+              <Button
+                variant="outlined"
+                size="large"
+                href={KOFI_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                sx={{ px: 4, fontSize: '1.1rem' }}
+              >
+                ☕ Buy us a coffee
+              </Button>
+            </Box>
+            <Button
+              variant="text"
+              size="medium"
+              href={`mailto:${EMAIL}?subject=${encodeURIComponent('Sponsorship — BakkieBot')}`}
+            >
+              Want to partner or sponsor with your brand? Email {EMAIL}
+            </Button>
           </Box>
         </Box>
       </Box>
