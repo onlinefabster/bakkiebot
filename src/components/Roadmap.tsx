@@ -34,7 +34,7 @@ const BLOCKS = [
       'Bilateral teleoperation: move the leader, follower reproduces it in real time',
       'Each episode logs 6-DOF joint positions + camera frames at 30 fps (Parquet/LeRobot dataset format)',
       'Record many episodes, varying the cup\u2019s starting position so the policy generalizes',
-      'Like Panbot: multiple policy observation cameras cover the cup and the machine',
+      'Multiple policy observation cameras cover the cup and the machine for a rich view of each step',
     ],
   },
   {
@@ -48,8 +48,8 @@ const BLOCKS = [
     tech: [
       'ACT (Action Chunking with Transformers), trained end-to-end on the recorded episodes',
       'ResNet image encoder for the camera observations; action chunking for smooth, long motions',
-      'One policy per stage — grab cup, place under spout, operate machine, remove & deliver (mirrors Panbot\u2019s per-task ACT policies)',
-      'GPU training, hundreds of epochs; checkpoints published to the Hugging Face Hub like Panbot\u2019s act_panbot_task2/3',
+      'One policy per stage — grab cup, place under spout, operate machine, remove & deliver',
+      'GPU training, hundreds of epochs; checkpoints published to the Hugging Face Hub',
     ],
   },
   {
@@ -63,7 +63,7 @@ const BLOCKS = [
     tech: [
       'YOLO detection/segmentation finds the cup, brew spout, drip tray and button, regardless of exact placement',
       'Perception triggers stage transitions: cup aligned under spout → press brew → brew finished → remove',
-      'A GRU-style readiness model (or a timer fallback) decides when the cup is done brewing — Panbot uses the same trigger logic',
+      'A GRU-style readiness model (or a timer fallback) decides when the cup is done brewing',
       'Trigger tuning: confidence threshold, stable-frame holding and area ratios for reliable, non-jittery transitions',
     ],
   },
@@ -77,7 +77,7 @@ const BLOCKS = [
       'Run the trained policies on the real arm with the vision triggers, then keep improving by adding demonstrations where it struggles.',
     tech: [
       'A runtime orchestrator connects the arm, cameras and policies and runs the stage loop end-to-end',
-      'Emergency stop + constrained workspace — the same safety practice Panbot recommends',
+      'Emergency stop + constrained workspace for safe, reliable operation',
       'On any failure, record more demonstrations, retrain and redeploy — this is the whole build log made public',
       'Publish each successful stage as progress on the site',
     ],
