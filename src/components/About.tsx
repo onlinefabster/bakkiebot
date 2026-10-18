@@ -60,10 +60,10 @@ export default function About() {
             BakkieBot is where that all comes together: a real robotics problem,
             built out in the open for anyone to watch. It's also why I back{' '}
             <Box component="a" href={MICRODUC_URL} target="_blank" rel="noopener noreferrer" sx={{ color: 'ink', fontWeight: 600, textDecoration: 'underline' }}>
-              MicroDuc
-            </Box>{' '}
-            by Pollen Robotics — because I believe small, open robot projects
-            matter.
+                MicroDuck
+              </Box>{' '}
+              by Pollen Robotics — because I believe small, open robot projects
+              matter.
           </Typography>
           <Box sx={{ display: 'flex', gap: 2, flexWrap: 'wrap' }}>
             <Box component="a" href={FACODE_URL} target="_blank" rel="noopener noreferrer" sx={{ color: 'ink', fontWeight: 600, textDecoration: 'underline' }}>
