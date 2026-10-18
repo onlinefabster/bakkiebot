@@ -32,11 +32,11 @@ export default function Footer() {
             opacity: 0.85,
           }}
         >
-          <Box component="a" href="https://www.bakkiebot.nl" target="_blank" rel="noreferrer" sx={{ color: 'inherit', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
-            www.bakkiebot.nl
+          <Box component="a" href="https://www.bakkiebot.com" target="_blank" rel="noreferrer" sx={{ color: 'inherit', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
+            www.bakkiebot.com
           </Box>
-          <Box component="a" href="mailto:fabian@bakkiebot.nl" sx={{ color: 'inherit', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
-            fabian@bakkiebot.nl
+          <Box component="a" href="mailto:fabian@bakkiebot.com" sx={{ color: 'inherit', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
+            fabian@bakkiebot.com
           </Box>
           <Box component="a" href="#top" sx={{ color: 'inherit', textDecoration: 'none', '&:hover': { textDecoration: 'underline' } }}>
             Back to top ↑

@@ -1,7 +1,7 @@
 import { Box, Button, Typography } from '@mui/material'
 import Section from './Section'
 
-const EMAIL = 'fabian@bakkiebot.nl'
+const EMAIL = 'fabian@bakkiebot.com'
 const GITHUB_SPONSORS_URL = 'https://github.com/sponsors/onlinefabster'
 const KOFI_URL = 'https://ko-fi.com/fab2ster'
 

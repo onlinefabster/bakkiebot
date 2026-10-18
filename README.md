@@ -44,4 +44,4 @@ docker run -d --name bakkiebot --restart unless-stopped \
 
 ## Contact
 
-Fabian Tuender · fabian@bakkiebot.nl · www.bakkiebot.nl
+Fabian Tuender · fabian@bakkiebot.com · www.bakkiebot.com

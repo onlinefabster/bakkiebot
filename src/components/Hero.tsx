@@ -1,7 +1,7 @@
 import { Box, Button, Typography } from '@mui/material'
 import Section from './Section'
 
-const EMAIL = 'fabian@bakkiebot.nl'
+const EMAIL = 'fabian@bakkiebot.com'
 
 export default function Hero() {
   return (
