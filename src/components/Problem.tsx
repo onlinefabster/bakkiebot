@@ -14,13 +14,13 @@ const POINTS = [
   {
     icon: <CoffeeIcon />,
     title: 'A real-world robotics testbed',
-    text: 'Operating a Philips Senseo is a genuine manipulation problem — fine motor control, sensing, and reliable workflow.',
+    text: 'Operating a Philips Senseo is a genuine manipulation problem — fine motor control, sensing, and a reliable workflow. That is fun to watch being solved in public.',
     color: '#8CCB9A',
   },
   {
     icon: <PrecisionManufacturingIcon />,
     title: 'Robots built for people',
-    text: 'Most automation lives behind factory walls. BakkieBot puts a friendly, approachable robot in a daily human setting.',
+    text: 'Most automation lives behind factory walls. BakkieBot puts a friendly, approachable robot in a daily human setting — a robot on the counter, not in a cage.',
     color: '#FFC94D',
   },
 ]
@@ -36,9 +36,9 @@ export default function Problem() {
         align="center"
         sx={{ maxWidth: 640, mx: 'auto', mb: 6 }}
       >
-        Making a fresh cup of coffee still depends on a human in the loop. BakkieBot
-        takes the routine out of it — and proves real robotics can earn their place
-        on a kitchen counter.
+        A fresh cup of coffee still depends on a human in the loop. BakkieBot takes
+        that routine out — one real robot, one real coffee machine, and the whole
+        build laid open for anyone to follow.
       </Typography>
       <Box
         sx={{

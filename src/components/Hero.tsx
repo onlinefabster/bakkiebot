@@ -39,18 +39,18 @@ export default function Hero() {
         >
           <Typography
             variant="h1"
-            sx={{ fontSize: { xs: '2.6rem', md: '4.6rem' }, lineHeight: 1.1 }}
+            sx={{ fontSize: { xs: '2.2rem', md: '3.6rem' }, lineHeight: 1.12, maxWidth: 800 }}
           >
-            What if your robot
+            Don't buy me a coffee.
             <br />
-            could make your coffee?
+            Help me build the robot that does.
           </Typography>
           <Typography
             variant="h5"
-            sx={{ maxWidth: 560, color: 'text.secondary', fontWeight: 500 }}
+            sx={{ maxWidth: 620, color: 'text.secondary', fontWeight: 500 }}
           >
-            A robot arm that operates a coffee machine — simple, smart and always
-            ready.
+            A robot arm and a Philips Senseo, built in public. Sponsor the hardware,
+            follow the build — one bakkie at a time.
           </Typography>
           <Box
             sx={{
@@ -75,7 +75,7 @@ export default function Hero() {
                 },
               }}
             >
-              ☕ Become a Sponsor
+              ☕ Sponsor the build
             </Button>
             <Button
               variant="outlined"
@@ -83,7 +83,7 @@ export default function Hero() {
               href="#how-it-works"
               sx={{ px: 4, fontSize: '1.05rem', borderColor: '#8FC7F5' }}
             >
-              See how it works
+              See what we'll build
             </Button>
           </Box>
         </Box>

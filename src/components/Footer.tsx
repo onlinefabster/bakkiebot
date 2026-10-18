@@ -19,7 +19,8 @@ export default function Footer() {
           BakkieBot
         </Typography>
         <Typography variant="body2" sx={{ opacity: 0.8, mb: 3 }}>
-          A robot arm that operates a Philips Senseo — simple, smart and always ready.
+          Don't buy me a coffee — help me build the robot that does. Sponsored
+          hardware, built in public.
         </Typography>
         <Box
           sx={{

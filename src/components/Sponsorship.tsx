@@ -32,15 +32,24 @@ export default function Sponsorship() {
       >
         <Box sx={{ position: 'relative' }}>
           <Typography variant="h2" gutterBottom>
-            Sponsor BakkieBot
+            Back the build
           </Typography>
           <Typography
             variant="body1"
-            sx={{ maxWidth: 560, mx: 'auto', mb: 3, color: 'text.secondary' }}
+            sx={{ maxWidth: 580, mx: 'auto', mb: 3, color: 'text.secondary' }}
           >
-            BakkieBot makes a compelling story about robotics in everyday life. Your
-            support helps fund hardware, tools and development — and puts your brand
-            in front of people who believe robots belong on every counter.
+            I'm building BakkieBot for the same reason I think you'd want it to
+            exist: robotics shouldn't stay behind factory walls. This is a real
+            robot arm and a real coffee machine, built out in the open — hardware,
+            code and progress, every step published.
+          </Typography>
+          <Typography
+            variant="body1"
+            sx={{ maxWidth: 580, mx: 'auto', mb: 4, color: 'text.secondary' }}
+          >
+            Your contribution buys the machine. In return, your name goes on the
+            build, you get updates as it comes to life — and when it delivers, the
+            first cups are on me.
           </Typography>
           <Box
             sx={{
@@ -76,15 +85,15 @@ export default function Sponsorship() {
                 rel="noopener noreferrer"
                 sx={{ px: 4, fontSize: '1.1rem' }}
               >
-                ☕ Buy us a coffee
+                ☕ Back on Ko-fi
               </Button>
             </Box>
             <Button
               variant="text"
               size="medium"
-              href={`mailto:${EMAIL}?subject=${encodeURIComponent('Sponsorship — BakkieBot')}`}
+              href={`mailto:${EMAIL}?subject=${encodeURIComponent('BakkieBot sponsorship')}`}
             >
-              Want to partner or sponsor with your brand? Email {EMAIL}
+              Want to partner or put your brand on the robot? Email {EMAIL}
             </Button>
           </Box>
         </Box>

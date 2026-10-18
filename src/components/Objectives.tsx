@@ -2,7 +2,7 @@ import { Box, Card, CardContent, Typography } from '@mui/material'
 import AutoAwesomeIcon from '@mui/icons-material/AutoAwesome'
 import VerifiedIcon from '@mui/icons-material/Verified'
 import SchoolIcon from '@mui/icons-material/School'
-import CoffeeIcon from '@mui/icons-material/Coffee'
+import GroupIcon from '@mui/icons-material/Group'
 import Section from './Section'
 
 const OBJECTIVES = [
@@ -23,14 +23,14 @@ const OBJECTIVES = [
   {
     icon: <SchoolIcon fontSize="large" />,
     title: 'Learn real robotics',
-    text: 'Master motor control, computer vision and workflow planning — packaged as a friendly, tangible project.',
+    text: 'Motor control, computer vision and workflow planning — packaged as a friendly, tangible project you can actually watch.',
     color: '#A99BE8',
     bg: '#F1EEFC',
   },
   {
-    icon: <CoffeeIcon fontSize="large" />,
-    title: 'A robot for real life',
-    text: 'Prove that collaborative robotics belong in everyday spaces, not just factory floors.',
+    icon: <GroupIcon fontSize="large" />,
+    title: 'Built in public, funded by you',
+    text: 'Hardware, code and progress laid open online. Your support literally buys the machine — and you get to see it work.',
     color: '#F28C8C',
     bg: '#FDEAEA',
   },
@@ -40,10 +40,11 @@ export default function Objectives() {
   return (
     <Section>
       <Typography variant="h2" gutterBottom align="center">
-        Our objectives
+        Why back the build
       </Typography>
       <Typography variant="body1" align="center" sx={{ maxWidth: 620, mx: 'auto', mb: 6 }}>
-        What BakkieBot sets out to achieve — and why it matters to back.
+        BakkieBot is a real robot on a real counter — built out in the open, the whole
+        way. Here is what backing it gets you.
       </Typography>
       <Box
         sx={{

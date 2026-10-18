@@ -15,17 +15,18 @@ export default function Setup() {
   return (
     <Section id="how-it-works" bg="#F6FAFD">
       <Typography variant="h2" gutterBottom align="center">
-        How it works
+        What we'll build
       </Typography>
       <Typography
         variant="body1"
         align="center"
         sx={{ maxWidth: 620, mx: 'auto', mb: 5 }}
       >
-        From empty cup to perfect coffee — automatically.
+        From empty cup to ready coffee — the full sequence we'll bring to life, and
+        show working in public step by step.
       </Typography>
 
-      {/* 6-step process, per the sketch */}
+      {/* 6-step planned pipeline */}
       <Box
         sx={{
           display: 'grid',
@@ -97,7 +98,8 @@ export default function Setup() {
           sx={{ width: '100%', height: 'auto', display: 'block', borderRadius: 3 }}
         />
         <Typography variant="body2" color="text.secondary" align="center" sx={{ mt: 2 }}>
-          A collaborative robot arm, a Philips Senseo — and a perfect cup of coffee.
+          The plan: one robot arm, a Philips Senseo — and a perfect cup of coffee,
+          published as it gets built.
         </Typography>
       </Box>
     </Section>
