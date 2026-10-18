@@ -2,6 +2,7 @@ import Hero from './components/Hero'
 import Problem from './components/Problem'
 import Objectives from './components/Objectives'
 import Setup from './components/Setup'
+import Roadmap from './components/Roadmap'
 import Tiers from './components/Tiers'
 import Sponsorship from './components/Sponsorship'
 import Footer from './components/Footer'
@@ -17,6 +18,7 @@ function App() {
       <Problem />
       <Objectives />
       <Setup />
+      <Roadmap />
       <Tiers />
       <Sponsorship />
       <Footer />
