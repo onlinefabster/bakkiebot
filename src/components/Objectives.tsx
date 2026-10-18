@@ -42,6 +42,14 @@ export default function Objectives() {
       <Typography variant="h2" gutterBottom align="center">
         Why back the build
       </Typography>
+      <Typography
+        variant="h5"
+        align="center"
+        gutterBottom
+        sx={{ fontWeight: 800, color: '#08285F', fontFamily: "'Caveat','Patrick Hand',cursive", fontSize: { xs: '1.8rem', md: '2.4rem' }, mb: 1 }}
+      >
+        Buy the robot. Watch it learn.
+      </Typography>
       <Typography variant="body1" align="center" sx={{ maxWidth: 620, mx: 'auto', mb: 6 }}>
         BakkieBot is a real robot on a real counter — built out in the open, the whole
         way. Here is what backing it gets you.

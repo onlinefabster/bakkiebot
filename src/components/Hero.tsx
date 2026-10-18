@@ -39,11 +39,11 @@ export default function Hero() {
         >
           <Typography
             variant="h1"
-            sx={{ fontSize: { xs: '2.2rem', md: '3.6rem' }, lineHeight: 1.12, maxWidth: 800 }}
+            sx={{ fontSize: { xs: '2.2rem', md: '3.4rem' }, lineHeight: 1.12, maxWidth: 840 }}
           >
             Don't buy me a coffee.
             <br />
-            Help me build the robot that does.
+            Help me build the robot that makes one for us.
           </Typography>
           <Typography
             variant="h5"

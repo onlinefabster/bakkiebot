@@ -19,8 +19,8 @@ export default function Footer() {
           BakkieBot
         </Typography>
         <Typography variant="body2" sx={{ opacity: 0.8, mb: 3 }}>
-          Don't buy me a coffee — help me build the robot that does. Sponsored
-          hardware, built in public.
+          Don't buy me a coffee — help me build the robot that makes one for us.
+          Sponsored hardware, built in public.
         </Typography>
         <Box
           sx={{
