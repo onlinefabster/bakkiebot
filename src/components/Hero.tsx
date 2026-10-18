@@ -47,10 +47,10 @@ export default function Hero() {
           </Typography>
           <Typography
             variant="h5"
-            sx={{ maxWidth: 620, color: 'text.secondary', fontWeight: 500 }}
+            sx={{ maxWidth: 640, color: 'text.secondary', fontWeight: 500 }}
           >
-            A robot arm and a Philips Senseo, built in public. Sponsor the hardware,
-            follow the build — one bakkie at a time.
+            A LeRobot SO-101 and a Philips Senseo, built in public. Sponsor the
+            hardware, follow the build — one bakkie at a time.
           </Typography>
           <Box
             sx={{
